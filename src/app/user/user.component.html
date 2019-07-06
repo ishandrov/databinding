@@ -1,0 +1,18 @@
+<form class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Enter your username</p>
+
+        <input name="user" 
+               id="defaultLoginFormEmail" 
+               class="form-control mb-4" 
+               placeholder="Your username" 
+               [(ngModel)]="username"
+               >
+
+        <label for="">Your username: {{username}}</label>
+
+        <button class="btn btn-info btn-block my-4" 
+                (click)="resetUserName()"
+                [disabled]="!username"
+                type="submit">Reset</button>
+</form>
